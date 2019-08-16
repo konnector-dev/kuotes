@@ -22,20 +22,20 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 # https://hub.docker.com/_/php#configuration
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
-RUN apt-get update \
-    && apt-get -y install git \
-    && apt-get -y install unzip \
-    && apt-get -y install autoconf libz-dev php7.3-dev php-pear \
-    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-
+#RUN apt-get update \
+#    && apt-get -y install git \
+#    && apt-get -y install unzip \
+#    && apt-get -y install autoconf libz-dev php7.3-dev php-pear \
+#    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+#
 #RUN pecl install grpc
 
 RUN ls -al
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php
-RUN php -r "unlink('composer-setup.php');"
-RUN mv composer.phar /usr/local/bin/composer
-RUN composer install -n --prefer-dist
+#RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+#RUN php composer-setup.php
+#RUN php -r "unlink('composer-setup.php');"
+#RUN mv composer.phar /usr/local/bin/composer
+#RUN composer install -n --prefer-dist
 
 RUN ls -al
