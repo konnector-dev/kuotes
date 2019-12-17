@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Routes configuration.
  *
@@ -20,7 +21,6 @@
  * @link          https://cakephp.org CakePHP(tm) Project
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
 use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
@@ -48,7 +48,7 @@ $routes->setRouteClass(DashedRoute::class);
 $routes->scope('/', function (RouteBuilder $builder) {
     // Register scoped middleware for in scopes.
     $builder->registerMiddleware('csrf', new CsrfProtectionMiddleware([
-        'httpOnly' => true,
+            'httpOnly' => true,
     ]));
 
     /*
@@ -82,7 +82,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
-    $builder->fallbacks();
+    //$builder->fallbacks();
 });
 
 /*
@@ -96,3 +96,10 @@ $routes->scope('/', function (RouteBuilder $builder) {
  * });
  * ```
  */
+// Custom
+$routes->scope('/api', function (RouteBuilder $builder) {
+    // No $builder->applyMiddleware() here.
+    // Connect API actions here.
+    $builder->setExtensions(['json', 'xml']);
+    $builder->resources('Users');
+});
