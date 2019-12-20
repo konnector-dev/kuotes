@@ -811,12 +811,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/phinx.git",
-                "reference": "c123ffe30a634714822d4462c4d02b1ae24792f0"
+                "reference": "658c9cc5695cc0bebbea7db9a88d68762d30d147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/phinx/zipball/c123ffe30a634714822d4462c4d02b1ae24792f0",
-                "reference": "c123ffe30a634714822d4462c4d02b1ae24792f0",
+                "url": "https://api.github.com/repos/cakephp/phinx/zipball/658c9cc5695cc0bebbea7db9a88d68762d30d147",
+                "reference": "658c9cc5695cc0bebbea7db9a88d68762d30d147",
                 "shasum": ""
             },
             "require": {
@@ -846,16 +846,16 @@
             ],
             "authors": [
                 {
-                    "name": "Woody Gilk",
-                    "email": "woody.gilk@gmail.com",
-                    "homepage": "http://shadowhand.me",
-                    "role": "Developer"
-                },
-                {
                     "name": "Rob Morgan",
                     "email": "robbym@gmail.com",
                     "homepage": "https://robmorgan.id.au",
                     "role": "Lead Developer"
+                },
+                {
+                    "name": "Woody Gilk",
+                    "email": "woody.gilk@gmail.com",
+                    "homepage": "http://shadowhand.me",
+                    "role": "Developer"
                 },
                 {
                     "name": "Richard Quadling",
@@ -876,20 +876,20 @@
                 "migrations",
                 "phinx"
             ],
-            "time": "2019-07-06T02:41:39+00:00"
+            "time": "2019-12-19T09:18:32+00:00"
         },
         {
             "name": "symfony/config",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "7aa5817f1b7a8ed377752b90fcc47dfb3c67b40c"
+                "reference": "6911d432edd5b50822986604fd5a5be3af856d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/7aa5817f1b7a8ed377752b90fcc47dfb3c67b40c",
-                "reference": "7aa5817f1b7a8ed377752b90fcc47dfb3c67b40c",
+                "url": "https://api.github.com/repos/symfony/config/zipball/6911d432edd5b50822986604fd5a5be3af856d30",
+                "reference": "6911d432edd5b50822986604fd5a5be3af856d30",
                 "shasum": ""
             },
             "require": {
@@ -940,20 +940,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T10:50:45+00:00"
+            "time": "2019-12-18T12:00:29+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201"
+                "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
+                "url": "https://api.github.com/repos/symfony/console/zipball/82437719dab1e6bdd28726af14cb345c2ec816d0",
+                "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0",
                 "shasum": ""
             },
             "require": {
@@ -1016,7 +1016,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T10:06:17+00:00"
+            "time": "2019-12-17T10:32:23+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -1303,16 +1303,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "76de473358fe802578a415d5bb43c296cf09d211"
+                "reference": "a08832b974dd5fafe3085a66d41fe4c84bb2628c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/76de473358fe802578a415d5bb43c296cf09d211",
-                "reference": "76de473358fe802578a415d5bb43c296cf09d211",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/a08832b974dd5fafe3085a66d41fe4c84bb2628c",
+                "reference": "a08832b974dd5fafe3085a66d41fe4c84bb2628c",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1358,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-12T14:51:11+00:00"
+            "time": "2019-12-10T10:33:21+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1691,16 +1691,16 @@
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "d2bcb70ecd2e4670521e0b338bbe5e9cf342d199"
+                "reference": "fb177fb4afcf95e272f5beea89afece32fc825a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/d2bcb70ecd2e4670521e0b338bbe5e9cf342d199",
-                "reference": "d2bcb70ecd2e4670521e0b338bbe5e9cf342d199",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/fb177fb4afcf95e272f5beea89afece32fc825a9",
+                "reference": "fb177fb4afcf95e272f5beea89afece32fc825a9",
                 "shasum": ""
             },
             "require": {
@@ -1747,7 +1747,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2019-12-16T02:14:36+00:00"
+            "time": "2019-12-19T01:39:05+00:00"
         },
         {
             "name": "composer/composer",
@@ -1755,12 +1755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "082422f334f1bf2d593ea395fe4d8c056b24fc8e"
+                "reference": "f60b71616e14b4498d2a743e2a4f931d06331447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/082422f334f1bf2d593ea395fe4d8c056b24fc8e",
-                "reference": "082422f334f1bf2d593ea395fe4d8c056b24fc8e",
+                "url": "https://api.github.com/repos/composer/composer/zipball/f60b71616e14b4498d2a743e2a4f931d06331447",
+                "reference": "f60b71616e14b4498d2a743e2a4f931d06331447",
                 "shasum": ""
             },
             "require": {
@@ -1827,7 +1827,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2019-12-13T11:11:50+00:00"
+            "time": "2019-12-19T13:23:55+00:00"
         },
         {
             "name": "composer/semver",
@@ -4463,25 +4463,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/TwigView.git",
-                "reference": "2594ecea782536867fb3b8715dd667d571f93ec6"
+                "reference": "83589cac5ff47f7eba141a191f22bd3e7e97bd85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/TwigView/zipball/2594ecea782536867fb3b8715dd667d571f93ec6",
-                "reference": "2594ecea782536867fb3b8715dd667d571f93ec6",
+                "url": "https://api.github.com/repos/WyriHaximus/TwigView/zipball/83589cac5ff47f7eba141a191f22bd3e7e97bd85",
+                "reference": "83589cac5ff47f7eba141a191f22bd3e7e97bd85",
                 "shasum": ""
             },
             "require": {
                 "aptoma/twig-markdown": "^3.0",
                 "asm89/twig-cache-extension": "^1.0",
-                "cakephp/cakephp": "4.x-dev as 4.0.0",
+                "cakephp/cakephp": "^4.0",
                 "jasny/twig-extensions": "^1.2.0",
                 "php": "^7.2",
                 "twig/twig": "^2.4.3"
             },
             "require-dev": {
-                "cakephp/cakephp-codesniffer": "dev-next",
-                "cakephp/debug_kit": "4.x-dev as 4.0.0",
+                "cakephp/cakephp-codesniffer": "^4.0",
+                "cakephp/debug_kit": "^4.0",
                 "jakub-onderka/php-console-highlighter": "^0.4.0",
                 "jakub-onderka/php-parallel-lint": "^1.0",
                 "phpunit/phpunit": "^8.0",
@@ -4512,7 +4512,7 @@
                 "twig2",
                 "view"
             ],
-            "time": "2019-12-10T16:31:47+00:00"
+            "time": "2019-12-19T01:46:53+00:00"
         }
     ],
     "aliases": [],
