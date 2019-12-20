@@ -109,18 +109,4 @@ class PagesControllerTest extends TestCase
         $this->assertResponseCode(403);
         $this->assertResponseContains('CSRF');
     }
-
-    /**
-     * Test that CSRF protection is applied to page rendering.
-     *
-     * @reutrn void
-     */
-    public function testCsrfAppliedOk()
-    {
-        $this->enableCsrfToken();
-        $this->post('/pages/home', ['hello' => 'world']);
-
-        $this->assertResponseCode(200);
-        $this->assertResponseContains('CakePHP');
-    }
 }
