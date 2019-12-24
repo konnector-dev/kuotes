@@ -57,6 +57,8 @@ $routes->scope('/', function (RouteBuilder $builder) {
      */
     $builder->applyMiddleware('csrf');
 
+    $builder->setExtensions(['json']);
+    $builder->resources('users');
     /*
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
@@ -67,7 +69,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
     /*
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    //$builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
     /*
      * Connect catchall routes for all controllers.
