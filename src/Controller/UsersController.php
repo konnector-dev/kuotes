@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Http\Response;
+use Cake\Utility\Text;
 
 /**
  * Users Controller
@@ -39,7 +40,7 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->Users->get($id);
+        $user = $this->Users->findByUid($id);
 
         $this->set('user', $user);
         $this->viewBuilder()->setOption('serialize', ['user']);
@@ -55,9 +56,9 @@ class UsersController extends AppController
         $status = 'error';
         if ($this->request->is(['post'])) {
             $form = [
-                'id' => $this->request->getData('password'),
-                'password' => $this->request->getData('password'),
                 'email' => $this->request->getData('email'),
+                'password' => $this->request->getData('password'),
+                'uid' => Text::uuid(),
             ];
             $user = $this->Users->newEntity($form);
             if ($this->Users->save($user)) {
@@ -78,7 +79,7 @@ class UsersController extends AppController
     public function edit($id = null)
     {
         $status = 'error';
-        $user = $this->Users->get($id);
+        $user = $this->Users->findByUid($id)->first();
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
