@@ -55,10 +55,8 @@ $routes->scope('/', function (RouteBuilder $builder) {
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered through `Application::routes()` with `registerMiddleware()`
      */
-    //$builder->applyMiddleware('csrf');
+    $builder->applyMiddleware('csrf');
 
-    $builder->setExtensions(['json']);
-    $builder->resources('users');
     /*
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
@@ -69,7 +67,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
     /*
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    //$builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    $builder->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
     /*
      * Connect catchall routes for all controllers.
@@ -98,3 +96,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
  * });
  * ```
  */
+$routes->scope('/api/v1', function (RouteBuilder $builder) {
+    $builder->setExtensions(['json']);
+    $builder->resources('users');
+});
