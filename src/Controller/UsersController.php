@@ -85,7 +85,7 @@ class UsersController extends AppController
                 $status = 'success';
             }
         }
-        $this->set(compact('user'));
+        $this->set(compact('user', 'status'));
         $this->viewBuilder()->setOption('serialize', ['user', 'status']);
     }
 
