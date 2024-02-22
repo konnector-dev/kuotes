@@ -1,6 +1,6 @@
 {
-    "name": "myapp",
-    "short_name": "myapp",
+    "name": "kuotes",
+    "short_name": "kuotes",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
