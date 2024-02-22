@@ -18,6 +18,12 @@ Setup
 - [x] Setup required extensions (starting with Flutter/Dart)
 - [x] Run the obligatory "Hello world"
 
-Prompt engineering
-- [ ] (Todo)
- 
+
+### Day 2
+
+Features
+- [x] Change background-color on swipe/drag
+- [ ] Slide up/down to change background color
+- [ ] Slide left/right to change quote text
+- [ ] Add a toggle for dark/light mode
+- [ ] Add a random quote generator floating button
