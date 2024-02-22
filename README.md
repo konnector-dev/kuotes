@@ -14,9 +14,9 @@
 Setup
 - [x] Setup a [repo ](git@github.com:konnector-dev/kuotes.git)
 - [x] Clone the repo in VS Code
-- [ ] Install/setup required SDKs
-- [ ] Setup required extensions (starting with Flutter/Dart)
-- [ ] Run the obligatory "Hello world"
+- [x] Install/setup required SDKs
+- [x] Setup required extensions (starting with Flutter/Dart)
+- [x] Run the obligatory "Hello world"
 
 Prompt engineering
 - [ ] (Todo)
