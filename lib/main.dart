@@ -33,7 +33,7 @@ class _MyScreenState extends State<MyScreen> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onHorizontalDragUpdate: (details) {
+      onHorizontalDragEnd: (details) {
         setState(() {
           _backgroundColor = _getRandomColor();
         });
