@@ -12,9 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: MyScreen(),
+        appBar: AppBar(
+          title: const Text('Kuotes!'),
+          backgroundColor: Colors.black87,
+          titleTextStyle: const TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+          ),
+        ),
+        body: const MyScreen(),
       ),
     );
   }
