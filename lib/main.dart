@@ -91,6 +91,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.amberAccent,
         onPressed: _loadQuote,
         child: const Icon(Icons.refresh),
       ),

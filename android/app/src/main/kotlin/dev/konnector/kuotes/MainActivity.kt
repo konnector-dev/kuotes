@@ -1,4 +1,4 @@
-package dev.konnector.kuotes.kuotes
+package dev.konnector.kuotes
 
 import io.flutter.embedding.android.FlutterActivity
 
