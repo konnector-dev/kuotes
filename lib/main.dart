@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Random Quote App',
+    return const MaterialApp(
+      title: 'Kuotes!',
       home: MyHomePage(),
     );
   }
@@ -36,8 +37,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _loadQuote() async {
-    // Load the JSON file from the assets directory
-    String jsonString = await DefaultAssetBundle.of(context).loadString('assets/quotes.json');
+    // Load the JSON file from the `assets/quotes.json` file
+    String jsonString =
+        await DefaultAssetBundle.of(context).loadString('assets/quotes.json');
 
     // Parse the JSON string into a Map
     Map<String, dynamic> jsonMap = jsonDecode(jsonString);
@@ -56,22 +58,36 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Random Quote App'),
+        title: const Text('Kuotes!'),
+        backgroundColor: Colors.amberAccent,
+        foregroundColor: Colors.black,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              quote,
-              style: const TextStyle(fontSize: 24),
-            ),
-            const SizedBox(height: 20),
-            Text(
-              '- $author',
-              style: const TextStyle(fontSize: 18),
-            ),
-          ],
+      body: Container(
+        color: Colors.black,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                color: Colors.amberAccent,
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.all(20),
+                child: Text(
+                  quote,
+                  style: const TextStyle(fontSize: 24, color: Colors.black),
+                ),
+              ),
+              const SizedBox(height: 50),
+              Container(
+                color: Colors.amberAccent,
+                padding: const EdgeInsets.all(8),
+                child: Text(
+                  author,
+                  style: const TextStyle(fontSize: 18),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
